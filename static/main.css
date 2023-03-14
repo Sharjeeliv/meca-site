@@ -27,7 +27,9 @@ body {
 
 ::-webkit-file-upload-button {
     background-color: #FBD24B;
-    padding: 10px;
+    padding: 0 10px 0 10px;
+    margin-right: 10px;
+    height: 100%;
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -40,6 +42,7 @@ body {
 .main-container input[type=file] {
     font-size: 16px;
     background: white;
+    height: 100%;
     border: none;
     border-radius: 15px;
     box-shadow: 3px 3px 5px #151414;
@@ -49,7 +52,8 @@ body {
     font-size: 16px;
     background-color: #FBD24B;
     margin-left: 5px;
-    padding: 11px;
+    height: 100%;
+    width: 25%;
     border-radius: 15px;
     border: none;
     box-shadow: 3px 3px 5px #151414;
@@ -59,3 +63,18 @@ body {
     background-color: #F2BB05;
 }
 
+.main-container form {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.main-container input[type=text] {
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #151414;
+    padding: 0 0 0 10px;
+    height: 100%;
+    align-content: center;
+}
