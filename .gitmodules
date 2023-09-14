@@ -1,0 +1,3 @@
+[submodule "meca"]
+	path = meca
+	url = https://github.com/Sharjeeliv/meca

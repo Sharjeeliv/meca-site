@@ -7,6 +7,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    min-width: 345px;
+    min-height: 144px;
 }
 
 .main-container h1 {
@@ -76,5 +78,6 @@ body {
     box-shadow: 3px 3px 5px #151414;
     padding: 0 0 0 10px;
     height: 100%;
+    min-width:200px;
     align-content: center;
 }

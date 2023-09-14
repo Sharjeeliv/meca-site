@@ -10,8 +10,11 @@
     <h1>Zotero MECA</h1>
     <p>A Metadata Extraction Citation Automation</p>
     <form method="POST" action="" enctype="multipart/form-data">
-        {% if cookie_input %}
-            <input type="text" placeholder="Enter Zotero Key" name="cookie">
+        {% if lib_key %}
+            <input type="text" placeholder="Enter Zotero Key" name="lib-key">
+            <input type="submit" value="Submit">
+        {% elif lib_id %}
+            <input type="text" placeholder="Enter Zotero Library Id" name="lib-id">
             <input type="submit" value="Submit">
         {% else %}
             <input type="file" name="file[]" webkitdirectory="" directory="">
