@@ -12,7 +12,6 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 logging.create_logger(app)
 
-
 @app.route('/')
 def landing():  # put application's code here
     lib_key = request.cookies.get("lib-key")
@@ -50,7 +49,9 @@ def landing_input():
     for file in input_files:
         if not allowed_file(file.filename): continue
         filename = secure_filename(file.filename)
+
         path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        print(path)
         file.save(path)
         files.append(path)
 
